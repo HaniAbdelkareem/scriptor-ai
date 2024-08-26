@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation"
 import { trpc } from "../_trpc/client"
 import { Loader2 } from "lucide-react"
 
-const AuthCallbackPage = () => {
+const Page = () => {
   const router = useRouter()
 
   const searchParams = useSearchParams()
@@ -45,4 +45,4 @@ const AuthCallbackPage = () => {
   )
 }
 
-export default AuthCallbackPage
+export default Page

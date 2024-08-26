@@ -3,7 +3,7 @@ import { db } from "@/db"
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 import { redirect } from "next/navigation"
 
-const DashboardPage = async () => {
+const Page = async () => {
   const { getUser } = getKindeServerSession()
   const user = await getUser()
 
@@ -20,4 +20,4 @@ const DashboardPage = async () => {
   return <Dashboard />
 }
 
-export default DashboardPage
+export default Page
