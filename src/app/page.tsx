@@ -25,7 +25,7 @@ export default function Home() {
         <Link
           className={buttonVariants({
             size: "lg",
-            className: "mt-5 text-[1rem]"
+            className: "mt-5 text-[1.05rem]"
           })}
           href={"/dashboard"}
           target="_blank"
