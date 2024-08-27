@@ -28,7 +28,7 @@ export default function Home() {
             className: "mt-5 text-[1.05rem]"
           })}
           href={"/dashboard"}
-          target="_blank"
+          // target="_blank"
         >
           Get started <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
