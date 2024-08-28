@@ -21,7 +21,7 @@ export const ourFileRouter = {
           key: file.key,
           name: file.name,
           userId: metadata.userId,
-          url: `https://uploadthing-prod.s3.us-west-2.amazonaws.com/${file.key}`, // You can also use "file.url"
+          url: file.url,  
           uploadStatus: "PROCESSING"
         }
       })
@@ -29,3 +29,6 @@ export const ourFileRouter = {
 } satisfies FileRouter
 
 export type OurFileRouter = typeof ourFileRouter
+
+          // You can also use "file.url"
+          // `https://uploadthing-prod.s3.us-west-2.amazonaws.com/${file.key}`
